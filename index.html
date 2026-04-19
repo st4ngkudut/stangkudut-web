@@ -3,172 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetConnect | Solusi Infrastruktur Jaringan</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-bg: #0b0e14;
-            --accent-color: #00d2ff;
-            --secondary-accent: #3a7bd5;
-            --text-color: #e0e0e0;
-            --card-bg: #161b22;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            background-color: var(--primary-bg);
-            color: var(--text-color);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .hero {
-            height: 100vh;
-            background: radial-gradient(circle at center, #1a2a44 0%, var(--primary-bg) 70%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, var(--accent-color), var(--secondary-accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 800;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            color: #a0a0a0;
-            margin-bottom: 2rem;
-        }
-
-        .btn {
-            padding: 12px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-            cursor: pointer;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: linear-gradient(45deg, var(--accent-color), var(--secondary-accent));
-            color: white;
-            box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 210, 255, 0.5);
-        }
-
-        .features {
-            padding: 100px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 15px;
-            border: 1px solid #30363d;
-            transition: 0.3s;
-            text-align: center;
-        }
-
-        .card:hover {
-            border-color: var(--accent-color);
-            transform: translateY(-10px);
-        }
-
-        .card i {
-            font-size: 3rem;
-            color: var(--accent-color);
-            margin-bottom: 20px;
-        }
-
-        .card h3 {
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-
-        footer {
-            padding: 50px 20px;
-            text-align: center;
-            border-top: 1px solid #30363d;
-            font-size: 0.9rem;
-            color: #6e7681;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-        }
-    </style>
+    <title>ST4NGKUDUT-WEB | Repurposing E-Waste</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <section class="hero">
-        <h1>Connecting The Future</h1>
-        <p>Membangun infrastruktur jaringan yang stabil, aman, dan super cepat untuk mendukung transformasi digital bisnis Anda.</p>
-        <a href="#services" class="btn btn-primary">Lihat Layanan</a>
-    </section>
-
-    <section id="services" class="features">
-        <div class="section-title">
-            <h2>Layanan Kami</h2>
-            <p>Solusi networking menyeluruh untuk segala kebutuhan</p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="brand-name">ST4NGKUDUT-WEB</h1>
+            <h2>Ubah Rongsokan Jadi <span class="highlight">Home Server</span></h2>
+            <p>Jangan buang perangkat jadul Anda! Ubah Router, STB, dan PC lawas menjadi pusat data, pemblokir iklan, hingga infrastruktur jaringan yang tangguh.</p>
+            <a href="#devices" class="btn">Eksplorasi Sekarang <i class="fas fa-rocket"></i></a>
         </div>
-        
+    </header>
+
+    <section id="devices" class="container">
+        <h2 class="section-title">Pilih Perangkat Target</h2>
         <div class="grid">
-            <div class="card">
-                <i class="fas fa-network-wired"></i>
-                <h3>Network Design</h3>
-                <p>Perancangan topologi jaringan lokal (LAN) maupun luas (WAN) yang efisien dan scalable.</p>
+            
+            <div class="card" onclick="openModal('router')">
+                <i class="fas fa-wifi card-icon"></i>
+                <h3>Router Bekas</h3>
+                <p>Flash jadi OpenWrt untuk Ad-Blocker & VPN Router tingkat dewa.</p>
+                <button class="btn-outline">Lihat Panduan</button>
             </div>
 
-            <div class="card">
-                <i class="fas fa-shield-halved"></i>
-                <h3>Cyber Security</h3>
-                <p>Proteksi mendalam dengan Firewall, IDS/IPS, dan enkripsi data untuk menjaga keamanan aset digital.</p>
+            <div class="card" onclick="openModal('stb')">
+                <i class="fas fa-tv card-icon"></i>
+                <h3>STB Ex-Provider</h3>
+                <p>Ubah jadi Armbian Server. Sempurna untuk Docker & Smart Home.</p>
+                <button class="btn-outline">Lihat Panduan</button>
             </div>
 
-            <div class="card">
-                <i class="fas fa-cloud"></i>
-                <h3>Cloud Integration</h3>
-                <p>Menghubungkan infrastruktur on-premise Anda dengan layanan cloud secara mulus dan aman.</p>
+            <div class="card" onclick="openModal('pc')">
+                <i class="fas fa-server card-icon"></i>
+                <h3>PC / Laptop Jadul</h3>
+                <p>Ubah jadi NAS (TrueNAS) atau Lab Virtualisasi (Proxmox).</p>
+                <button class="btn-outline">Lihat Panduan</button>
             </div>
         </div>
     </section>
+
+    <div id="guideModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Judul Panduan</h2>
+            <div id="modalBody" class="modal-body">
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2024 NetConnect Indonesia. Dibuat dengan semangat teknologi.</p>
+        <p>&copy; 2024 ST4NGKUDUT-WEB. Build Network, Not E-Waste.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
