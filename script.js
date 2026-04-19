@@ -60,6 +60,25 @@ const guideData = {
             </ol>
         `
     }
+        hp: { 
+        title: "HP Android Bekas ➡️ Server & CCTV",
+        content: `
+            <p>HP jadul dengan layar retak atau touchscreen mati? Jangan dibuang! Prosesor HP Android modern sudah cukup kuat untuk menjalankan server ringan.</p>
+            <h3>Potensi HomeLab:</h3>
+            <ul>
+                <li><strong>IP Camera 24/7:</strong> Ubah jadi CCTV yang bisa dipantau dari luar rumah via internet.</li>
+                <li><strong>Linux Server (Termux):</strong> Jalankan Node.js, Python, atau database MySQL langsung dari kantong Anda.</li>
+                <li><strong>3D Printer Controller:</strong> Pakai aplikasi Octo4a untuk memantau mesin printer 3D.</li>
+            </ul>
+            <h3>Langkah Eksekusi:</h3>
+            <ol>
+                <li>Lakukan <em>Factory Reset</em> agar HP benar-benar bersih dan enteng.</li>
+                <li>Untuk CCTV: Instal aplikasi <strong>IP Webcam</strong> dari PlayStore. Setel agar kamera tetap merekam walau layar dikunci.</li>
+                <li>Untuk Server: Instal aplikasi <strong>Termux</strong> (disarankan unduh dari F-Droid, jangan PlayStore). Anda kini punya terminal Linux utuh!</li>
+            </ol>
+            <p style="color: #ff7b72; font-weight: bold; margin-top:10px;">[!] TIPS HARDWARE: Jika dinyalakan 24 jam nonstop dicolok charger, baterai bisa kembung. Disarankan melakukan "Bypass Baterai" (Dummy Battery) menggunakan modul step-down.</p>
+        `
+    }
 };
 
 function openModal(deviceId) {
