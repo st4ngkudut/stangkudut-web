@@ -13,7 +13,7 @@
         <div class="hero-content">
             <h1 class="brand-name">ST4NGKUDUT-WEB</h1>
             <h2>Ubah Rongsokan Jadi <span class="highlight">Home Server</span></h2>
-            <p>Jangan buang perangkat jadul Anda! Ubah Router, STB, dan PC lawas menjadi pusat data, pemblokir iklan, hingga infrastruktur jaringan yang tangguh.</p>
+            <p>Jangan buang perangkat jadul Anda! Ubah Router, STB, HP retak, dan PC lawas menjadi pusat data, pemblokir iklan, hingga infrastruktur jaringan yang tangguh.</p>
             <a href="#devices" class="btn">Eksplorasi Sekarang <i class="fas fa-rocket"></i></a>
         </div>
     </header>
@@ -41,6 +41,31 @@
                 <h3>PC / Laptop Jadul</h3>
                 <p>Ubah jadi NAS (TrueNAS) atau Lab Virtualisasi (Proxmox).</p>
                 <button class="btn-outline">Lihat Panduan</button>
+            </div>
+
+            <div class="card" onclick="openModal('hp')">
+                <i class="fas fa-mobile-alt card-icon"></i>
+                <h3>HP Android Bekas</h3>
+                <p>Sulap jadi IP Camera 24/7 atau web server ringan via Termux.</p>
+                <button class="btn-outline">Lihat Panduan</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">F.A.Q (Tanya Jawab)</h2>
+        <div class="faq-grid">
+            <div class="faq-card">
+                <h4><i class="fas fa-bolt"></i> Boros listrik gak kalau nyala 24/7?</h4>
+                <p>Sangat irit! STB dan Router rata-rata cuma butuh daya 5 Watt. Jika dihitung dengan tarif listrik normal, nyala sebulan penuh paling cuma nambah tagihan Rp 5.000 - Rp 10.000. Untuk PC jadul memang lebih boros (sekitar 50-100 Watt).</p>
+            </div>
+            <div class="faq-card">
+                <h4><i class="fas fa-skull-crossbones"></i> Aman dari resiko mati total (Brick)?</h4>
+                <p>Selalu ada resiko, terutama saat proses *flashing* OS. Aturan emasnya: <strong>Jangan pernah matikan perangkat saat proses flash berjalan</strong>. Pastikan juga file *firmware* yang diunduh benar-benar cocok dengan *chipset* perangkat.</p>
+            </div>
+            <div class="faq-card">
+                <h4><i class="fas fa-globe"></i> Bisa diakses dari luar rumah?</h4>
+                <p>Tentu bisa! Jika provider internet Anda memberikan IP Publik, Anda bisa membuka *port*. Jika menggunakan IP Privat (seperti Indihome/Orbit), Anda bisa menggunakan layanan <em>Tunneling</em> seperti <strong>Cloudflare Tunnels</strong> atau <strong>Tailscale</strong> (gratis).</p>
             </div>
         </div>
     </section>
